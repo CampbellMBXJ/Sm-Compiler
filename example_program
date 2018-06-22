@@ -1,0 +1,19 @@
+in x;
+y: 0;
+
+wl x > 3 {
+  y : y + 1;
+  x : x - 1;
+  ot y
+};
+
+fr i : (1+x)*3 {
+  ot i
+};
+
+if y > 5 & y < 10 {
+  ot 25
+} el {
+  z : x + y;
+  ot z + 25
+}
