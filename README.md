@@ -1,3 +1,4 @@
+# Sm
 'Sm' is a language designed to be compact, all reserved words are
 two characters in length.
 
