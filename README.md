@@ -6,8 +6,8 @@ Whats the point? ...ug well.. it was fun to make?
 contained is a scanner, parser and code generator. Together they
 produce Java assembly to be run on a JVM.
 
-Pipe your input file to the code generator and pipe to desired 
-assembly file. Using Jasmin convert assembly to a Java 
+Pipe your input file to the code generator and pipe the output to 
+desired assembly file. Using Jasmin convert assembly code to a Java 
 Class file and Voila! you are good to go.
 
 The Compiler excepts programs that follow this 
