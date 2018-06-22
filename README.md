@@ -14,30 +14,30 @@ Class file and Voila! you are good to go.
 The Compiler excepts programs that follow this 
 Extented-BNF
 
-Program = Statements
-Statements = Statement (';' Statement)*
-Statement = If | While | For| Assignment | Input | Output
+Program = Statements  
+Statements = Statement (';' Statement)*  
+Statement = If | While | For| Assignment | Input | Output  
 
-If = 'if' BooleanExpression '{' Statements '}' ['el' '{' Statements '}']
-While = 'wl' BooleanExpression '{' Statements '}'
-For = 'fr' Assignment '{' Statements '}'
-Assignment = identifier ':' Expression
-Input = 'in' identifier
-Output = 'ot' (identifier | Expression)
+If = 'if' BooleanExpression '{' Statements '}' ['el' '{' Statements '}']  
+While = 'wl' BooleanExpression '{' Statements '}'  
+For = 'fr' Assignment '{' Statements '}'  
+Assignment = identifier ':' Expression  
+Input = 'in' identifier  
+Output = 'ot' (identifier | Expression)  
 
-BooleanExpression = BooleanTerm ('|' BooleanTerm)*
-BooleanTerm = BooleanFactor ('&' BooleanFactor)*
-BooleanFactor = 'nt' BooleanFactor | Comparison
+BooleanExpression = BooleanTerm ('|' BooleanTerm)*  
+BooleanTerm = BooleanFactor ('&' BooleanFactor)*  
+BooleanFactor = 'nt' BooleanFactor | Comparison  
 
-Comparison = Expression Relation Expression
-Relation = '=' | '!=' | '<' | '<=' | '>' | '>='
+Comparison = Expression Relation Expression  
+Relation = '=' | '!=' | '<' | '<=' | '>' | '>='  
 
-Expression = Term (('+' | '-') Term)*
-Term = Factor (('*' | '/') Factor)*
-Factor = '('Expression')' | number | identifier
+Expression = Term (('+' | '-') Term)*  
+Term = Factor (('*' | '/') Factor)*  
+Factor = '('Expression')' | number | identifier  
 
-Some Limitations:
-Integers cant be to long.
-Stack size must not exceed 1024.
-Integer is the only type.
-Logical operators cannot be nested.
+Some Limitations:  
+Integers cant be to long.  
+Stack size must not exceed 1024.  
+Integer is the only type.  
+Logical operators cannot be nested.  
